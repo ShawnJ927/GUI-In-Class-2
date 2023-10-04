@@ -1,14 +1,16 @@
-/* styles.css */
+/* styles.css 
+    By: Shawn Jordan
+*/
 
 /* change the font size, font family, and letter spacing */
 body {
     font-size: 80%;
     font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 0.15cm;
+    letter-spacing: 0.15em;
 }
 /* main "box" top and bottom margins, left right auto
     double lined border, padding 20px, min 720px max 940px */
-.page {
+#page {
     border: 4px double #000; 
     padding: 20px;
     margin-top: 10px;
@@ -18,19 +20,55 @@ body {
     max-width: 940px;
     min-width: 720px;
 }
-.logo {
+/* set logo width, top and bottom margins, center horizontally with auto margins */
+#logo {
     width: 150px;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
 }
-
-.navigation {
+/* set list width, padding, and add border to top and bottom of list */
+#navigation {
     width: 570px;
     padding: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-    border-top: 2px #000;
-    border-bottom: 1px #000;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+}
+/* horizontally place the links. Add small margins to sides */
+ul li {
+    display: inline;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+/* center text and set width. Add top and bottom margins */
+p {
+    text-align: center;
+    width: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+/* remove underlines, links are black, add spacing with padding */
+a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 6px;
+    padding-right: 18px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+}
+/* make sure that the links hovered turn red */
+a:hover {
+    color: red;
+}
+/* any link with the 'on' class is red */
+a.on {
+    color: red;
 }
